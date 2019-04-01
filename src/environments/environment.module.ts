@@ -1,7 +1,13 @@
 import {NgModule} from '@angular/core';
+import {InjectionToken} from '@angular/core';
+import {environment} from './environment';
 
+export const envToken = new InjectionToken('env');
 @NgModule({
   imports: [],
-  exports: []
-})
-export class AppRoutingModule {}
+  exports: [],
+  providers: [
+    {provide: envToken, useFactory: () => environment }
+  ]})
+export class EnvironmentModule {}
+
