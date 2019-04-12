@@ -4,17 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EnvironmentModule } from '../environments/environment.module';
-import { IndexComponent } from './index/index.component';
+import {ListModule} from '../pages/list/list.module';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
-    EnvironmentModule
+    EnvironmentModule,
+    ListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
