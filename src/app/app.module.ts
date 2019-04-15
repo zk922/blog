@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { EnvironmentModule } from '../environments/environment.module';
 import {ListModule} from '../pages/list/list.module';
 import {CommonModule} from '@angular/common';
+import {ArticleModule} from '../pages/article/article.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     EnvironmentModule,
-    ListModule
+    ListModule,
+    ArticleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

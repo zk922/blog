@@ -1,6 +1,6 @@
 <section class="card mb-2 article-list" *ngFor="let item of list; index as i">
   <div class="card-body">
-    <a href="###" class="title-link">
+    <a class="title-link" (click)="navTo('/article/' + i)">
       <h5 class="card-title">{{item.title}}</h5>
     </a>
     <h6 class="card-subtitle">{{item.title}}</h6>
