@@ -1,2 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.card.article-list{
+
+  &:hover{
+    box-shadow: 1px 1px 8px 0 #ababab;
+  }
+
+  a.title-link{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    &:hover{
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .card-title{
+    font-weight: bold;
+  }
+  .card-subtitle{
+    color: #ababab;
+  }
+}
+
