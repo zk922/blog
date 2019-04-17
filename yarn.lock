@@ -6232,6 +6232,11 @@ ssri@^6.0.0, ssri@^6.0.1:
   dependencies:
     figgy-pudding "^3.5.1"
 
+stackedit-js@^1.0.7:
+  version "1.0.7"
+  resolved "http://registry.npm.taobao.org/stackedit-js/download/stackedit-js-1.0.7.tgz#2ee22dd3aa78140fbb81926f01a4308e8e967bf0"
+  integrity sha1-LuIt06p4FA+7gZJvAaQwjo6We/A=
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "http://registry.npm.taobao.org/static-extend/download/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
