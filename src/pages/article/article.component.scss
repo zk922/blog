@@ -1,0 +1,15 @@
+.article-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 470px) {
+  .article-nav{
+    flex-wrap: wrap;
+    & button{
+      margin-bottom: 3px;
+      width: 100%;
+    }
+  }
+
+}

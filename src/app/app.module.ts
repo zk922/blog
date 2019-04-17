@@ -7,6 +7,7 @@ import { EnvironmentModule } from '../environments/environment.module';
 import {ListModule} from '../pages/list/list.module';
 import {CommonModule} from '@angular/common';
 import {ArticleModule} from '../pages/article/article.module';
+import {PostModule} from '../pages/post/post.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ArticleModule} from '../pages/article/article.module';
     AppRoutingModule,
     EnvironmentModule,
     ListModule,
-    ArticleModule
+    ArticleModule,
+    PostModule
   ],
   providers: [],
   bootstrap: [AppComponent]
