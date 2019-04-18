@@ -14,4 +14,5 @@ import {CommonModule} from '@angular/common';
   ],
   providers: []
 })
-export class PostModule {}
+export class PostModule {
+}
