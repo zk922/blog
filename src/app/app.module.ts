@@ -8,6 +8,7 @@ import {ListModule} from '../pages/list/list.module';
 import {CommonModule} from '@angular/common';
 import {ArticleModule} from '../pages/article/article.module';
 import {PostModule} from '../pages/post/post.module';
+import {Page404Module} from '../pages/page404/page404.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {PostModule} from '../pages/post/post.module';
     EnvironmentModule,
     ListModule,
     ArticleModule,
-    PostModule
+    PostModule,
+    Page404Module
   ],
   providers: [],
   bootstrap: [AppComponent]
