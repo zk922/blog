@@ -8,6 +8,7 @@ import {Page404Component} from '../pages/page404/page404.component';
 const routes: Routes = [
   {path: '', redirectTo: 'index', pathMatch: 'full'},
   {path: 'index', component: ListComponent},
+  {path: 'search', component: ListComponent},
   {path: 'article/:id', component: ArticleComponent},
   {path: 'edit/:id', component: PostComponent},
   {path: 'newPost', component: PostComponent},
