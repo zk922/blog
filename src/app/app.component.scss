@@ -1,0 +1,19 @@
+@media screen and (max-width: 470px) {}
+#inputSearch{
+  width: 200px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, width 0.3s ease-in-out;
+}
+#inputSearch:focus{
+  width: 300px;
+}
+@media screen and (max-width: 470px) {
+  .search-area form{
+    display: flex;
+    &>div{
+      flex: 1;
+      &>#inputSearch, &>#inputSearch:focus{
+        width: 100%;
+      }
+    }
+  }
+}

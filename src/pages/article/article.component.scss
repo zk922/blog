@@ -1,14 +1,11 @@
 .article-nav{
+  padding: 1em 0;
+  border-top: 1px solid #d3d3d3;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.article-main{
-  display: block;
-  p{
-    text-indent: 2em;
-  }
-}
+
 @media screen and (max-width: 470px) {
   .article-nav{
     flex-wrap: wrap;
