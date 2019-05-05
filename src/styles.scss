@@ -2,3 +2,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "~highlight.js/styles/railscasts.css";
 @import "assets/style/article-theme";
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
