@@ -1,18 +1,23 @@
-<section class="card mb-2 article-list" *ngFor="let item of list; index as i">
-  <div class="card-body">
-    <a href="javascript: void (0)" class="title-link" (click)="navTo('/article/' + i)">
-      <h5 class="card-title">{{item.title}}</h5>
-    </a>
-    <h6 class="card-subtitle">{{item.title}}</h6>
-  </div>
-  <div class="card-footer text-muted d-flex">
-    <div class="btn-group d-flex justify-content-start flex-shrink-1 flex-grow-1">
-      <a class="btn-link text-secondary mr-1" href="###">aaa</a>
-      <a class="btn-link text-secondary mr-1" href="###">aaa</a>
-      <a class="btn-link text-secondary mr-1" href="###">aaa</a>
+<ul class="list-wrap">
+  <li class="card mb-2 article-list" *ngFor="let item of list; index as i">
+    <div class="card-body">
+      <a href="javascript: void (0)" class="title-link" (click)="navTo('/article/' + i)">
+        <h5 class="card-title">{{item.title}}</h5>
+      </a>
+      <h6 class="card-subtitle">{{item.title}}</h6>
     </div>
-    <div>
-      2019-03-03
+    <div class="card-footer text-muted d-flex">
+      <div class="btn-group d-flex justify-content-start flex-shrink-1 flex-grow-1">
+        <a class="btn-link text-secondary mr-1" href="###">aaa</a>
+        <a class="btn-link text-secondary mr-1" href="###">aaa</a>
+        <a class="btn-link text-secondary mr-1" href="###">aaa</a>
+      </div>
+      <div>
+        2019-03-03
+      </div>
     </div>
-  </div>
-</section>
+  </li>
+</ul>
+<div class="pagination">
+
+</div>
