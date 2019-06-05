@@ -1,19 +1,14 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ListComponent} from '../pages/list/list.component';
-import {ArticleComponent} from '../pages/article/article.component';
-import {PostComponent} from '../pages/post/post.component';
 import {Page404Component} from '../pages/page404/page404.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'index', pathMatch: 'full'},
-  {path: 'index', component: ListComponent},
-  {path: 'search', component: ListComponent},
-  {path: 'article/:id', component: ArticleComponent},
-  {path: 'edit/:id', component: PostComponent},
-  {path: 'newPost', component: PostComponent},
-  {path: 'page404', component: Page404Component},
-  {path: '**', redirectTo: 'page404'}
+  {path: 'index', loadChildren: '../pages/list/list.module#ListModule'},
+  {path: 'list', loadChildren: '../pages/list/list.module#ListModule'},
+  {path: 'article/:id', loadChildren: '../pages/article/article.module#ArticleModule'},
+  {path: 'post', loadChildren: '../pages/post/post.module#PostModule'},
+  {path: '**', component: Page404Component}
 ];
 
 @NgModule({

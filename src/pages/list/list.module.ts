@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {ListComponent} from './list.component';
 import {CommonModule} from '@angular/common';
-import {HttpClientModule} from '@angular/common/http';
+import ListRoutingModule from './list-routing.module';
 
 @NgModule({
   declarations: [
@@ -9,7 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    ListRoutingModule
   ],
   exports: [
     ListComponent
