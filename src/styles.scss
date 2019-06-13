@@ -1,12 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~highlight.js/styles/railscasts.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
 html, body{
   width: 100%;
   height: 100%;
 }
-.ant-layout-sider-zero-width-trigger{
-  position: fixed;
-  top: 100px;
-  left: 0;
-  z-index: 9999;
+.content-wrap{
+  max-width: 960px;
+  margin: 0 auto;
 }
+
+/** 文章样式 **/
+.article-main{
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #111111;
+  //word-spacing: 2px;
+  h1{
+    font-size: 44px;
+    padding: 20px 0 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  h3{
+    font-size: 24px;
+    padding: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  p{
+    font-size: 16px;
+    text-indent: 30px;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+  ul, ol, dl{
+    font-size: 16px;
+    padding-left: 30px;
+    li{
+
+    }
+  }
+}
+

@@ -6,7 +6,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'index', pathMatch: 'full'},
   {path: 'index', loadChildren: '../pages/list/list.module#ListModule'},
   {path: 'list', loadChildren: '../pages/list/list.module#ListModule'},
-  {path: 'article/:id', loadChildren: '../pages/article/article.module#ArticleModule'},
+  {path: 'article', loadChildren: '../pages/article/article.module#ArticleModule'},
   {path: 'post', loadChildren: '../pages/post/post.module#PostModule'},
   {path: '**', component: Page404Component}
 ];

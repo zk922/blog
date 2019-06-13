@@ -1,41 +1,41 @@
-<nz-layout>
-  <nz-header *ngIf="!xsScreen">
-    <ul nz-menu nzTheme="dark" nzMode="horizontal" style="line-height: 64px; width: 100%;">
-      <li nz-menu-item>nav 1</li>
-      <li nz-menu-item>nav 2</li>
-      <li nz-menu-item>nav 3</li>
-    </ul>
-  </nz-header>
-  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzCollapsedWidth]="0" [nzZeroTrigger]="zeroTrigger" *ngIf="xsScreen">
-    <div class="logo"></div>
-    <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
-      <li nz-menu-item>
-        <span><i nz-icon type="user"></i><span class="nav-text">nav 1</span></span>
-      </li>
-      <li nz-menu-item>
-        <span><i nz-icon type="video-camera"></i><span class="nav-text">nav 2</span></span>
-      </li>
-      <li nz-menu-item>
-        <span><i nz-icon type="upload"></i><span class="nav-text">nav 3</span></span>
-      </li>
-      <li nz-menu-item>
-        <span><i nz-icon type="user"></i><span class="nav-text">nav 4</span></span>
-      </li>
-    </ul>
-  </nz-sider>
-  <nz-content>
-    <router-outlet></router-outlet>
-  </nz-content>
+<header class="bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
-  <!--<nz-footer>-->
 
-  <!--</nz-footer>-->
 
-</nz-layout>
-
-<ng-template #zeroTrigger>
-  <i nz-icon type="menu-fold" theme="outline"></i>
-</ng-template>
 
 
 
