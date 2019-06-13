@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {ListComponent} from './list.component';
 import {CommonModule} from '@angular/common';
 import ListRoutingModule from './list-routing.module';
-import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {ListService} from './list.service';
 
 @NgModule({
   declarations: [
@@ -10,12 +10,13 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
   ],
   imports: [
     CommonModule,
-    // NgZorroAntdModule,
     ListRoutingModule
   ],
   exports: [
     ListComponent
   ],
-  providers: []
+  providers: [
+    ListService
+  ]
 })
 export class ListModule {}

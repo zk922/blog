@@ -1,22 +1,47 @@
-.card.article-list{
 
-  transition: box-shadow 0.15s ease-in-out;
-  &:hover{
-    box-shadow: 1px 1px 8px 0 #ababab;
-  }
+.list-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
 
-  a.title-link{
-    color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
+  .card{
+    margin-top: 10px;
+    width: 100%;
     &:hover{
-      color: rgba(0, 0, 0, 0.7);
+
+    }
+  }
+  @media (min-width: 992px){
+    .card{
+      width: calc((100% - 10px)/2);
     }
   }
 
-  .card-title{
-    font-weight: bold;
+  h5.card-title a{
+    color: #2a2935;
+    transition: all .2s linear;
+    font-size: 24px;
+    &:hover{
+      text-decoration: underline;
+    }
   }
-  .card-subtitle{
-    color: #ababab;
+  .card-text{
+    max-height: 48px;
+    overflow: hidden;
+  }
+  .card-footer{
+    display: flex;
+    justify-content: space-between;
+    .tag-wrap a{
+      color: #6c757d;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 5px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }

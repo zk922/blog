@@ -1,3 +1,21 @@
-
+<div class="list-wrap">
+  <div class="card" *ngFor="let item of list; index as i">
+    <div class="card-body">
+      <h5 class="card-title"><a>{{item.title}}</a></h5>
+      <p class="card-text">{{item.title}}</p>
+      <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+    </div>
+    <div class="card-footer text-muted">
+      <span class="tag-wrap">
+        <a>tag1</a>
+        <a>tag1</a>
+        <a>tag1</a>
+        <a>tag1</a>
+        <a>tag1</a>
+      </span>
+      <span class="time-wrap">2222-22-22</span>
+    </div>
+  </div>
+</div>
 
 
