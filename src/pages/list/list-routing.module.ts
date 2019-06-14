@@ -12,4 +12,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export default class ListRoutingModule {}
+export class ListRoutingModule {}
