@@ -11,17 +11,17 @@ export class ListService {
 
   public getList(): Observable<any[]> {
     return of([{title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
+      // {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
       {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
       {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'},
-      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'}]).pipe(delay(2000));
+      {title: '去微软推哦哦i破iu哦怕怕怕', tags: [], date: '2019-03-04'}]).pipe(delay(1000));
   }
 
 }

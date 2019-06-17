@@ -1,9 +1,8 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { fromEvent, Observable, Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { ListService } from './list.service';
-import { PublicFnService } from '../../common/public-fn.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
@@ -21,11 +20,9 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 export class ListComponent implements OnInit, OnDestroy {
   constructor(
     public router: Router,
-    public listService: ListService,
-    public publicFn: PublicFnService,
-    public rootView: ViewContainerRef
+    public listService: ListService
   ) {
-    window['a'] = this;
+    // window['a'] = this;
   }
   public list: any[] = [];
 
@@ -71,6 +68,11 @@ export class ListComponent implements OnInit, OnDestroy {
           clearInterval(showInterval);
         }
       }, 70);
+      setTimeout(() => {
+        if (document.documentElement.scrollHeight <= document.documentElement.clientHeight) {
+          this.loadList();
+        }
+      });
     },
     err => {
       this.loading = 3;

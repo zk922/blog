@@ -5,7 +5,8 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import 'bootstrap';
-
+import 'editor.md/editormd.js';
+console.log(111)
 if (environment.production) {
   enableProdMode();
 }
