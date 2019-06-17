@@ -1,13 +1,22 @@
-import {Injectable} from '@angular/core';
+import {Injectable, ViewContainerRef} from '@angular/core';
 
 @Injectable()
 export class PublicFnService {
+
+  constructor(
+
+  ) {}
+
   public getTop(el): number {
     let top: number = 0;
     let cur = el;
-    for (let i = 0; cur; i++, cur = cur.parentNode) {
+    while (typeof cur.offsetTop === 'number') {
       top += cur.offsetTop;
+      cur = cur.parentNode;
     }
     return top;
+  }
+
+  public $message(): void {
   }
 }

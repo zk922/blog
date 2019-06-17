@@ -1,7 +1,7 @@
 <div class="list-wrap" #listWrap>
-  <div class="card" *ngFor="let item of list; index as i">
+  <div class="card" *ngFor="let item of list; index as i" [@show]="item.show ? 'end' : 'start'">
     <div class="card-body">
-      <h5 class="card-title"><a>{{item.title}}</a></h5>
+      <h5 class="card-title"><a>{{item.title + i}}</a></h5>
       <p class="card-text">{{item.title}}</p>
       <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
     </div>
@@ -18,9 +18,10 @@
   </div>
 </div>
 <div class="info-wrap">
-  <div class="spinner-border" role="status">
+  <div class="spinner-border" role="status" *ngIf="loading === 1">
     <span class="sr-only">Loading...</span>
   </div>
+  <div class="loading-fail" *ngIf="loading === 3">加载失败，请重试</div>
 </div>
 
 
